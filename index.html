@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <style>
         /* Custom styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f8f8;
             color: #333;
             margin: 0;
@@ -35,18 +35,27 @@
             font-size: 2.5em;
         }
         nav {
-            text-align: center;
-            margin: 20px 0;
+            background-color: #6a1b9a;
+            width: 100%;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #6a1b9a;
+            color: #fff;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcccb;
         }
         .container {
             width: 80%;
             margin: 0 auto;
+            padding: 20px 0;
         }
         .intro {
             text-align: center;
@@ -66,10 +75,11 @@
             width: 250px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .product:hover {
             transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .product img {
             width: 100%;
@@ -79,29 +89,29 @@
         }
         .product h3 {
             margin: 0 0 10px;
+            color: #6a1b9a;
         }
         .product p {
             margin: 0 0 15px;
         }
         .footer {
-            background-color: #ffcccb;
+            background-color: #6a1b9a;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
+            padding: 20px;
+            position: relative;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
         }
         .footer p {
             margin: 0;
         }
         .footer a {
-            color: #6a1b9a;
+            color: #ffcccb;
             text-decoration: none;
             font-weight: bold;
+        }
+        .footer a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -165,10 +175,9 @@
 
     <section id="contact" class="intro">
         <h2>Contact Us</h2>
-        <p>Address: Teacher Village 2, Brgy Sta Cruz San Antonio Nueva Ecija</p>
         <p>Email: info@margaretscakeandpastry.com</p>
-        <p>Phone:09556800811</p>
-        
+        <p>Phone: 0955680081</p>
+        <p>Address: Teacher Village 2, Brgy Sta Cruz San Antonio Nueva Ecija</p>
     </section>
 </div>
 
