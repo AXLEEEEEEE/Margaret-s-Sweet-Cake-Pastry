@@ -94,6 +94,25 @@
         .product p {
             margin: 0 0 15px;
         }
+        .center-btn {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .center-btn .btn {
+            background-color: #6a1b9a;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .center-btn .btn:hover {
+            background-color: #ffcccb;
+            color: #6a1b9a;
+            transform: scale(1.05);
+        }
         .footer {
             background-color: #6a1b9a;
             color: #fff;
@@ -118,8 +137,8 @@
 <body>
 
 <header>
-    <img src="Logo.jpg" alt="Margaret's Cake and Pastry Logo">
-    <h1>Margaret's Cake and Pastry</h1>
+    <img src="img/Logo.jpg"  alt="Margaret's Cake and Pastry Logo" data-toggle="modal" data-target="#imageModal0">
+    <h1>Margaret's Cake and Pastries</h1>
 </header>
 
 <nav>
@@ -131,42 +150,46 @@
 
 <div class="container">
     <section id="home" class="intro">
-        <h2>Welcome to Margaret's Cake and Pastry</h2>
+        <h2>Welcome to Margaret's Cake and Pastries</h2>
         <p>Your one-stop shop for delicious cakes and pastries!</p>
     </section>
 
     <section id="products" class="products">
         <div class="product">
-            <img src="Blueberry.jpg" alt="Blueberry Cake">
+            <img src="img/Blueberry.jpg" alt="Blueberry Cake">
             <h3>Blueberry Cheese Cake</h3>
             <p>Rich and moist Blueberry Cheese cake with creamy frosting.</p>
         </div>
         <div class="product">
-            <img src="Customize.jpg" alt="Customize">
+            <img src="img/Customize.jpg" alt="Customize">
             <h3>Customize Cake</h3>
             <p>You can say what kind of cake design you want.</p>
         </div>
         <div class="product">
-            <img src="leche.jpg" alt="Lecheflan">
+            <img src="img/leche.jpg" alt="Lecheflan">
             <h3>Lecheflan</h3>
             <p>Sweet Lecheflan.</p>
         </div>
         <div class="product">
-            <img src="bro.jpg" alt="Brownies">
+            <img src="img/bro.jpg" alt="Brownies">
             <h3>Brownies</h3>
             <p>Delicious Brownies.</p>
         </div>
         <div class="product">
-            <img src="3.jpg" alt="Brazo">
+            <img src="img/3.jpg" alt="Brazo">
             <h3>Brazo De Mercedes</h3>
             <p>Delicious Brazo De Mercedes.</p>
         </div>
         <div class="product">
-            <img src="ensemada.jpg" alt="Enseymada">
+            <img src="img/ensemada.jpg" alt="Enseymada">
             <h3>Enseymada Bread</h3>
             <p>Delicious Enseymada Bread.</p>
         </div>
     </section>
+
+    <div class="center-btn">
+        <a href="cake-designs.html" class="btn">Other Cake Designs</a>
+    </div>
 
     <section id="about" class="intro">
         <h2>About Us</h2>
@@ -179,6 +202,22 @@
         <p>Phone: 0955680081</p>
         <p>Address: Teacher Village 2, Brgy Sta Cruz San Antonio Nueva Ecija</p>
     </section>
+</div>
+
+<div class="modal fade" id="imageModal0" tabindex="-1" aria-labelledby="imageModalLabel0" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel0"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/Logo.jpg" alt="Cake 2" class="img-fluid">
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="footer">
