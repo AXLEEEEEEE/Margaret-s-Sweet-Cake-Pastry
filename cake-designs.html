@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margaret's Cake Designs</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            color: #6a1b9a;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #6a1b9a;
+            width: 100%;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcccb;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .intro {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .product h3 {
+            margin: 0 0 10px;
+            color: #6a1b9a;
+        }
+        .product p {
+            margin: 0 0 15px;
+        }
+        .footer {
+            background-color: #6a1b9a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #ffcccb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/Logo.jpg" alt="Margaret's Cake and Pastry Logo" data-toggle="modal" data-target="#imageModal0">
+    <h1>Margaret's Cake Designs</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#products">Products</a>
+    <a href="index.html#about">About Us</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section class="intro">
+        <h2>Other Cake Designs and Products</h2>
+        <p>Explore our wide variety of cake designs and products!</p>
+        
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="img/one.jpg" alt="Cake 1" data-toggle="modal" data-target="#imageModal1">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/two.jpg" alt="Cake 2" data-toggle="modal" data-target="#imageModal2">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/three.jpg" alt="Cake 3" data-toggle="modal" data-target="#imageModal3">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/four.jpg"  alt="Cake 4" data-toggle="modal" data-target="#imageModal4">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/five.jpg"  alt="Cake 5" data-toggle="modal" data-target="#imageModal5">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/six.jpg"  alt="Cake 6" data-toggle="modal" data-target="#imageModal6">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/Seven.jpg"  alt="Cake 7" data-toggle="modal" data-target="#imageModal7">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/eight.jpg"  alt="Cake 8" data-toggle="modal" data-target="#imageModal8">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/nine.jpg" alt="Cake 9" data-toggle="modal" data-target="#imageModal9">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/eleven.jpg"  alt="Cake 10" data-toggle="modal" data-target="#imageModal10">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/twelve.jpg"  alt="Cake 11" data-toggle="modal" data-target="#imageModal11">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/13.jpg"  alt="Cake 12" data-toggle="modal" data-target="#imageModal12">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/14.jpg"  alt="Cake 13" data-toggle="modal" data-target="#imageModal13">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/15.jpg" alt="Cake 14" data-toggle="modal" data-target="#imageModal14">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/16.jpg" alt="Cake 15" data-toggle="modal" data-target="#imageModal15">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/17.jpg"  alt="Cake 16" data-toggle="modal" data-target="#imageModal16">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="product">
+            <img src="img/18.jpg"  alt="Cake 17" data-toggle="modal" data-target="#imageModal17">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel1">Hello Kitty Theme Cake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/one.jpg" alt="Cake 1" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal0" tabindex="-1" aria-labelledby="imageModalLabel0" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel0"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/Logo.jpg" alt="Cake 2" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel2">Cake 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/two.jpg" alt="Cake 2" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel3">Batman Theme Cake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/three.jpg" alt="Cake 3" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel4">Gender Reveal Cake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/four.jpg" alt="Cake 4" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel5"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/five.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel6">Cake Number</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/six.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel7">Tiktok Theme Cake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/Seven.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel8">Mermaid Theme Cake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/eight.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal9" tabindex="-1" aria-labelledby="imageModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel9"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/nine.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal10" tabindex="-1" aria-labelledby="imageModalLabel10" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel10">Cheese Bread Roll</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/eleven.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal11" tabindex="-1" aria-labelledby="imageModalLabel11" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel11">Brownies</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/twelve.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal12" tabindex="-1" aria-labelledby="imageModalLabel12" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel12"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/13.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal13" tabindex="-1" aria-labelledby="imageModalLabel13" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel13"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/14.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal14" tabindex="-1" aria-labelledby="imageModalLabel14" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel14">Bread</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/15.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal15" tabindex="-1" aria-labelledby="imageModalLabel15" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel15"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/16.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal16" tabindex="-1" aria-labelledby="imageModalLabel16" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel16">Cookies And Crinkels</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/17.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal17" tabindex="-1" aria-labelledby="imageModalLabel17" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel17">Cake and Cupcake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/18.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        
+        
+    </section>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Margaret's Cake and Pastry. All rights reserved.</p>
+    <a href="https://www.facebook.com/share/6VwTR44aX3vn9V8h/?mibextid=qi2Omg" target="_blank">Follow us on Facebook</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript to handle image click and show in modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var modalImage = document.getElementById('modalImage');
+        var productImages = document.querySelectorAll('.product img');
+        
+        productImages.forEach(function(img) {
+            img.addEventListener('click', function() {
+                modalImage.src = this.src;
+            });
+        });
+    });
+    </script>   
+</body>
+</html>
