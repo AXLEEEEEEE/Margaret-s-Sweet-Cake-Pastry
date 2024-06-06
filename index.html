@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Your custom styles here */
+        /* Custom styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
@@ -22,6 +22,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header img {
             width: 150px;
@@ -31,6 +32,7 @@
         header h1 {
             margin: 0;
             color: #6a1b9a;
+            font-size: 2.5em;
         }
         nav {
             text-align: center;
@@ -63,6 +65,11 @@
             padding: 20px;
             width: 250px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
         }
         .product img {
             width: 100%;
@@ -83,8 +90,18 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            max-height: 50px; /* Limiting the height of the footer */
-            overflow-y: auto; /* Adding scrollbar if content overflows */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -148,15 +165,15 @@
 
     <section id="contact" class="intro">
         <h2>Contact Us</h2>
-        <p>Fb:https://www.facebook.com/margaret.manuntag</p>
         <p>Email: info@margaretscakeandpastry.com</p>
         <p>Phone: +123 456 7890</p>
-        <p>Address:Teacher Village 2,Brgy Sta Cruz San Antonio Nueva Ecija</p>
+        <p>Address: Teacher Village 2, Brgy Sta Cruz San Antonio Nueva Ecija</p>
     </section>
 </div>
 
 <div class="footer">
     <p>&copy; 2024 Margaret's Cake and Pastry. All rights reserved.</p>
+    <a href="https://www.facebook.com/share/6VwTR44aX3vn9V8h/?mibextid=qi2Omg" target="_blank">Follow us on Facebook</a>
 </div>
 
 <!-- Bootstrap JS (Optional, if you need Bootstrap features like modals, dropdowns, etc.) -->
