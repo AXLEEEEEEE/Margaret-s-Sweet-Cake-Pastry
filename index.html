@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margaret's Cake and Pastry</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Custom styles */
         body {
+            background-image: url('Back.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f8f8;
             color: #333;
@@ -58,8 +60,11 @@
             padding: 20px 0;
         }
         .intro {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
             text-align: center;
-            margin: 50px 0;
         }
         .products {
             display: flex;
@@ -132,12 +137,104 @@
         .footer a:hover {
             color: #fff;
         }
+        .intro-background {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 0.3rem;
+            --stroke: #666;
+            --fill: #ffc73a;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .rating input {
+            appearance: unset;
+        }
+
+        .rating label {
+            cursor: pointer;
+        }
+
+        .rating svg {
+            width: 2rem;
+            height: 2rem;
+            overflow: visible;
+            fill: transparent;
+            stroke: var(--stroke);
+            stroke-linejoin: bevel;
+            stroke-dasharray: 12;
+            animation: idle 4s linear infinite;
+            transition: stroke 0.2s, fill 0.5s;
+        }
+
+        @keyframes idle {
+            from {
+                stroke-dashoffset: 24;
+            }
+        }
+
+        .rating label:hover svg {
+            stroke: var(--fill);
+        }
+
+        .rating input:checked ~ label svg {
+            transition: 0s;
+            animation: idle 4s linear infinite, yippee 0.75s backwards;
+            fill: var(--fill);
+            stroke: var(--fill);
+            stroke-opacity: 0;
+            stroke-dasharray: 0;
+            stroke-linejoin: miter;
+            stroke-width: 8px;
+        }
+
+        @keyframes yippee {
+            0% {
+                transform: scale(1);
+                fill: var(--fill);
+                fill-opacity: 0;
+                stroke-opacity: 1;
+                stroke: var(--stroke);
+                stroke-dasharray: 10;
+                stroke-width: 1px;
+                stroke-linejoin: bevel;
+            }
+
+            30% {
+                transform: scale(0);
+                fill: var(--fill);
+                fill-opacity: 0;
+                stroke-opacity: 1;
+                stroke: var(--stroke);
+                stroke-dasharray: 10;
+                stroke-width: 1px;
+                stroke-linejoin: bevel;
+            }
+
+            30.1% {
+                stroke: var(--fill);
+                stroke-dasharray: 0;
+                stroke-linejoin: miter;
+                stroke-width: 8px;
+            }
+
+            60% {
+                transform: scale(1.2);
+                fill: var(--fill);
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="Logo.jpg"  alt="Margaret's Cake and Pastry Logo" data-toggle="modal" data-target="#imageModal0">
+    <img src="Logo.jpg" alt="Margaret's Cake and Pastry Logo" data-toggle="modal" data-target="#imageModal1">
     <h1>Margaret's Cake and Pastries</h1>
 </header>
 
@@ -162,7 +259,7 @@
         </div>
         <div class="product">
             <img src="Customize.jpg" alt="Customize">
-            <h3>Customised Cake</h3>
+            <h3>Customize Cake</h3>
             <p>You can say what kind of cake design you want.</p>
         </div>
         <div class="product">
@@ -188,46 +285,57 @@
     </section>
 
     <div class="center-btn">
-        <a href="cake-designs.html" class="btn">Other Cake Designs</a>
+        <a href="cake-designs.html" class="btn">View All Designs</a>
     </div>
-  <div class="row">
-        <div class="col-md-6">
-    <section id="about" class="intro">
-        <h2>About Us</h2>
-        <p>Margaret's Cake and Pastry has been serving delicious baked goods since 2020. Our passion for baking is evident in every bite and if you want to order Just click the link Follow us on Facebook.</p>
-    </section>
-        </div>
-<div class="col-md-6">
-    <section id="contact" class="intro">
-        <h2>Contact Us</h2>
-        <p>Email: info@margaretscakeandpastry.com</p>
-        <p>Phone: 0955680081</p>
-        <p>Address: Teacher Village 2, Brgy Sta Cruz San Antonio Nueva Ecija</p>
-    </section>
-</div>
+    
+    
 
-<div class="modal fade" id="imageModal0" tabindex="-1" aria-labelledby="imageModalLabel0" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel0"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="Logo.jpg" alt="Cake 2" class="img-fluid">
-            </div>
+    <div class="row">
+        <div class="col-md-6">
+            <section id="about" class="intro intro-background">
+                <h2>About Us</h2>
+                <p>Margaret's Cake and Pastry has been serving delicious baked goods since 2020. Our passion for baking is evident in every bite.</p>
+                </section>
+        </div>
+        <div class="col-md-6">
+            <section id="contact" class="intro intro-background">
+                <h2>Contact Us</h2>
+                <p>manuntagmargaret@gmail.com</p>
+                <p>Phone: 0955680081</p>
+                <p>Address: Teacher Village 2, Brgy Sta Cruz San Antonio Nueva Ecija</p>
+                <div class="rating">
+                    <input type="radio" id="star-1" name="star-radio" value="star-1">
+                    <label for="star-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <input type="radio" id="star-2" name="star-radio" value="star-1">
+                    <label for="star-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <input type="radio" id="star-3" name="star-radio" value="star-1">
+                    <label for="star-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <input type="radio" id="star-4" name="star-radio" value="star-1">
+                    <label for="star-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <input type="radio" id="star-5" name="star-radio" value="star-1">
+                    <label for="star-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                </div>
+            </section>
         </div>
     </div>
 </div>
 
 <div class="footer">
     <p>&copy; 2024 Margaret's Cake and Pastry. All rights reserved.</p>
-    <a href="https://www.facebook.com/share/6VwTR44aX3vn9V8h/?mibextid=qi2Omg" target="_blank"><u>Follow us on Facebook</u></a>
+    <a href="https://www.facebook.com/share/6VwTR44aX3vn9V8h/?mibextid=qi2Omg" target="_blank">Follow us on Facebook</a>
 </div>
 
-<!-- Bootstrap JS (Optional, if you need Bootstrap features like modals, dropdowns, etc.) -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
